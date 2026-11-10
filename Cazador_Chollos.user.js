@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Consume Calidad - Cazador de Chollos
 // @namespace    https://github.com/jmarcaestevez-pixel/Cazador-Chollos-Amazon
-// @version      1.1.0
+// @version      1.2.2
 // @description  Analiza la ficha abierta, guarda candidatos y permite revisar ofertas manualmente.
 // @match        https://www.amazon.es/*
 // @grant        GM_getValue
@@ -52,7 +52,7 @@
   `;
   document.head.appendChild(style);
   const box = document.createElement('section'); box.id = 'cc-cazador';
-  box.innerHTML = `<header id="cc-handle"><strong>🔎 CAZADOR DE CHOLLOS</strong><span><button id="cc-off" title="Apagar hasta volver a encenderlo">⏻ Apagar</button> <button id="cc-hide" title="Minimizar">−</button></span></header>
+  box.innerHTML = `<header id="cc-handle"><strong>🔎 CAZADOR DE CHOLLOS · V1.2.2</strong><span><button id="cc-off" title="Apagar hasta volver a encenderlo">⏻ Apagar</button> <button id="cc-hide" title="Minimizar">−</button></span></header>
     <main id="cc-body">
       <div class="ccrow" style="justify-content:space-between"><strong>Descuento mínimo</strong><strong id="cc-mintext" class="ccgreen"></strong></div>
       <input id="cc-slider" type="range" min="10" max="90" step="1" />
